@@ -16,7 +16,7 @@ const particleOptions: ParticleOptions = {
     return pixel.b > 150;
   },
   color: ({ x, y, image }) => "#e2e2e2",
-  radius: () => Math.random() * 1.5 + 0.5,
+  radius: () => Math.random() * 1.0 + 0.5,
   mass: () => 200,
   friction: () => 0.15,
   initialPosition: ({ canvasDimensions }) => {
@@ -36,9 +36,9 @@ export default function App() {
       src={"/react-logo.png"}
       width={Number(innerWidth)}
       height={Number(innerHeight)}
-      scale={0.75}
+      scale={0.85}
       entropy={20}
-      maxParticles={4000}
+      maxParticles={5000}
       particleOptions={particleOptions}
       mouseMoveForce={motionForce}
       touchMoveForce={motionForce}
