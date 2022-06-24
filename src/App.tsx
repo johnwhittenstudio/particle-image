@@ -15,7 +15,7 @@ const particleOptions: ParticleOptions = {
     // Make a particle for this pixel if blue > 50 (range 0-255)
     return pixel.b > 150;
   },
-  color: ({ x, y, image }) => "#e2e2e2",
+  color: ({ x, y, image }) => "#ffffff",
   radius: () => Math.random() * 1.0 + 0.5,
   mass: () => 200,
   friction: () => 0.15,
